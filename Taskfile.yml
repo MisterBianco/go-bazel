@@ -1,0 +1,10 @@
+version: '2'
+
+tasks:
+  build:
+    cmds:
+      - bazel build :all
+
+  test:
+    cmds: 
+      - bazel build :all --verbose_failures
